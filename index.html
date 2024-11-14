@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Ecológico Trilha do Sol</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo-trilha-do-sol.png" alt="Logotipo Parque Ecológico Trilha do Sol" id="logo">
+        <h1>Parque Ecológico Trilha do Sol</h1>
+        <p id="slogan">Conecte-se com a Natureza: Revitalize sua Saúde, Recarregue sua Vida!</p>
+        
+        <p><strong style="color: white;">Confira o clima das cidades e planeje seu passeio em nossos parques!</strong></p>
+    </header>
+
+    <section class="clima">
+        <div class="botoes-cidades">
+            <button onclick="getWeatherForCity('Rio de Janeiro')">Rio de Janeiro</button>
+            <button onclick="getWeatherForCity('Natal')">Natal</button>
+            <button onclick="getWeatherForCity('Fortaleza')">Fortaleza</button>
+            <button onclick="getWeatherForCity('Florianópolis')">Florianópolis</button>
+            <button onclick="getWeatherForCity('Gramado')">Gramado</button>
+            <button onclick="getWeatherForCity('Maceió')">Maceió</button>
+        </div>
+    </section>
+
+    <section class="recomendacoes">
+        <h2>Recomendações de Atividades</h2>
+        <p id="activitySuggestion">🌞 Clima ameno, ideal para atividades ao ar livre</p>
+    </section>
+
+    <div id="weatherDisplay">
+        <p id="cityName"></p>
+        <p id="temperature"></p>
+        <p id="condition"></p>
+        <p id="humidity"></p>
+        <p id="windSpeed"></p>
+        <p id="errorMessage" style="color: red;"></p>
+        <div id="loadingMessage" style="display: none;">🔄 Carregando...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
